@@ -1,0 +1,141 @@
+:root, :root.light {
+    /* fonts */
+    --principal-font: "Inter", sans-serif;
+    --accent-font: "Karla", sans-serif;
+
+    /* font-weights */
+    --regular: 400;
+    --medium: 500;
+    --extra-bold: 800;
+
+    /* sizes */
+    --medium-font: 2rem;
+    --standard-font: 1.6rem;
+    --large-font: 4rem;
+
+    /* colors */
+    --font-color: #2B191C;
+    --bg-color: #FBEFEF;
+    --white: #FFFFFF;
+    --pink-accent: #E89BA7;
+    --pink-accent-text: #EFA2AD;
+    --light-pink: #F7DEDE;
+    --medium-pink: #B78D8D;
+}
+
+:root.dark{
+    /* colors */
+    --bg-color: #673E44;
+    --font-color: #FBEFEF;
+    --pink-accent: #E89BA7;
+    --pink-accent-text: #EFA2AD;
+    --medium-pink: #B78D8D;
+    --light-pink: #834E56;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px*/
+}
+
+body{
+    font-family: var(--principal-font);
+    background-color: var(--bg-color);
+    font-size: var(--medium-font);
+    margin: 0;
+    
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+    width: 60rem;
+    padding: 10rem;
+}
+
+@media (max-width: 600px){
+    .main{
+        padding: 0;
+        margin: 2rem;
+        width: 85%;
+    }
+    
+}
+
+.main__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__text--title{
+    font-size: var(--large-font);
+    font-weight: var(--extra-bold);
+    font-family: var(--accent-font);
+    color: var(--font-color);
+}
+
+.accent-title{
+    color: var(--pink-accent);
+}
+
+.main__text{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    font-size: var(--medium-font);
+    font-weight: var(--medium);
+    color: var(--font-color);
+}
+
+.main__text--paragraph{
+    color: var(--medium-pink);
+}
+
+.main__passwords{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    margin-top: 3rem;
+}
+
+@media (max-width: 600px){
+    .main__passwords{
+        flex-direction: column;
+    }
+    
+}
+
+.main__passwords--input{
+    font-family: var(--principal-font);
+    font-size: var(--standard-font);
+    color: var(--pink-accent-text);
+    background-color: var(--light-pink);
+    text-align: center;
+    height: fit-content;
+    width: 21rem;
+    border: none;
+    border-radius: 0.6rem;
+    padding: 0.8rem;
+    margin: 1rem;
+}
+.main__btn{
+    font-family: var(--principal-font);
+    font-size: var(--standard-font);
+    color: var(--white);
+    background-color: var(--pink-accent);
+    width: fit-content;
+    padding: 1rem;
+    margin-left: 1rem;
+    height: auto;
+    border: none;
+    border-radius: 0.6rem;
+}
+
+.main__btn:hover{
+    background-color: var(--medium-pink);
+    cursor: pointer;
+}
