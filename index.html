@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generate a random password">
+    <title>Generate A Safe Password!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="main">
+        <button onclick="toggleTheme()" class="main__btn" id="theme-btn">🌙</button>
+        <div class="main__text">
+            <h1 class="main__text--title">Generate a <strong class="accent-title">random password</strong></h1>
+            <p class="main__text--paragraph">Never use an insecure password again.</p>
+        </div>
+        
+        <button onclick="setInputsPasswords()" class="main__btn">Generate passwords</button>
+        <div class="main__passwords">
+            <input class="main__passwords--input" id="generatedPass1" type="text" readonly>
+            <input class="main__passwords--input" id="generatedPass2" type="text" readonly>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
