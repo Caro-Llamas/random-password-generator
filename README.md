@@ -26,4 +26,4 @@ This project is a simple web application that generates two random passwords of 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/random-password-generator.git
+   git clone https://github.com/caro-llamas/random-password-generator.git
